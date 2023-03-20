@@ -1,4 +1,4 @@
-//Getters and Setters
+// Getters and Setters
 // If you want others to read or modify the value of a private member, you can provide public get and set methods.
 
 // class Student{
@@ -54,5 +54,5 @@
 
 
 //Getters and setters are very important in real world.
-//If you want to add age, but with a constraint that age cannot be negative,you can put a constraint that if age no is less than
-// 0,return.
+//If you want to add age, but with a constraint that age cannot be negative, you can put a constraint that if age no is less than
+// 0,return(i.e do not update age parameter).

@@ -1,4 +1,5 @@
-// - Friendship is not inherited (If a base class has a friend function, then the function doesn’t become a friend of the derived class(es). )
+// - Friendship is not inherited 
+// (If a base class has a friend function, then the function doesn’t become a friend of the derived class(es).)
 
 #include <iostream>
 using namespace std;

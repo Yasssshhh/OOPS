@@ -68,7 +68,7 @@
 //     Car C;
 
 //     Vehicle*v1=new Vehicle;
-//     Vehicle*v2;
+//     Vehicle*v2; //vehicle pointer (no object is created here)
 //     v2=&C;
 //     Vehicle*v3=new Car;
 
@@ -86,5 +86,5 @@
 // //Vehicle
 // //Vehicle
 
-// // V2 and V3 are pointing to child class but still they are printing the function of base class. This is due to function overriding. 
-// // We didnt check that whom v2 is pointing and we are printing blindly. 
+// V2 and V3 are pointing to child class but still they are printing the function of base class. This is due to function overriding. 
+// We didnt check that whom v2 is pointing and we are printing blindly. 

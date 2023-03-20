@@ -79,10 +79,8 @@
 // }
 
 
-
-
-// This keyword (Every object can access its own object using a special keyword called this).
-// this keyword holds address of current object,it is a pointer variable
+// this keyword (Every object can access its own properties using a special keyword called this).
+// this keyword holds address of current object and, it is a pointer variable.
 
 // class Student{
 
@@ -144,5 +142,3 @@
 
 //If you will try to make destructor a private funcion, first error will be thrown by delete s3, and then this,
 // 'Student::~Student()' is private within this context
-
-

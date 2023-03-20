@@ -1,6 +1,5 @@
-// Constant member functions are those functions 
-// that are denied permission to change the values of the data members of their class.
-// When a function is declared as const, it can be called on any type of object, const object as well as non-const objects.
+//UPDATED FRACTION CLASS
+
 #include<iostream>
 using namespace std;
 

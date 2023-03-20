@@ -14,7 +14,6 @@ void& ar = a;  // it is not valid
 Points to remember:
 1: The pointer variable has n-levels/multiple levels of indirection i.e. single-pointer, double-pointer,
 triple-pointer. Whereas, the reference variable has only one/single level of indirection.
-The following code reveals the mentioned points: 
 
 2: Reference variable cannot be updated.
 

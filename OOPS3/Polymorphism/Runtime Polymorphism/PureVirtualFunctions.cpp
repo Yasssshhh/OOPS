@@ -8,7 +8,6 @@
 // Sometimes implementation of all function cannot be provided in a base class because we don’t know the implementation.
 // Such a class is called abstract class.
 
-
 // Abstract class can have normal functions and variables along with a pure virtual function.
 // If an Abstract Class has derived class, they must implement all pure virtual functions, or else they will become Abstract too.
 // We can’t create object of abstract class.

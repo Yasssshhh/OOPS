@@ -34,8 +34,8 @@
 
 // class Test {
 // 	const int t;
-// public:
-// 	Test(int t):t(t) {} //Initializer list must be used.
+//     public:
+// 	Test(int t):t(t) {} //Initializer list must be used, which should be decalred public.
 // 	int getT() { return t; }
 // };
 

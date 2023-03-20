@@ -59,65 +59,74 @@
 // // 3
 // // 2
 
+// We will get error if print function is not present in vechicle class as through v2 we can only access 
+// properties which are available in itself.
+
+
 // //Example 2
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// class GFG_Base {
+class GFG_Base {
 
-// public:
+public:
 
-// 	virtual void display()
-// 	{
-// 		cout << "Called virtual Base Class function" <<
-// 				"\n\n";
-// 	}
+	virtual void display()
+	{
+		cout << "Called virtual Base Class function" <<
+				"\n\n";
+	}
 
-// 	void print()
-// 	{
-// 		cout << "Called GFG_Base print function" <<
-// 				"\n\n";
-// 	}
-// };
+	void print()
+	{
+		cout << "Called GFG_Base print function" <<
+				"\n\n";
+	}
+};
 
 
-// class GFG_Child : public GFG_Base {
+class GFG_Child : public GFG_Base {
 
-// public:
-// 	void display()
-// 	{
-// 		cout << "Called GFG_Child Display Function" <<
-// 				"\n\n";
-// 	}
+public:
+	void display()
+	{
+		cout << "Called GFG_Child Display Function" <<
+				"\n\n";
+	}
 
-// 	void print()
-// 	{
-// 		cout << "Called GFG_Child print Function" <<
-// 				"\n\n";
-// 	}
-// };
+	void print()
+	{
+		cout << "Called GFG_Child print Function" <<
+				"\n\n";
+	}
+};
 
-// int main()
-// {
+int main()
+{
 
-// 	GFG_Base* base;
+	GFG_Base* base;
 
-// 	GFG_Child child;
+	GFG_Child child;
 
-// 	base = &child;
+	base = &child;
 
-//     //If you want to print base class funtion which is virtual, you can use ::
-// 	base->GFG_Base::display();
+    //If you want to print base class funtion which is virtual, you can use ::
+	base->GFG_Base::display();
 
-//     base->display();
+    base->display();
     
-// 	base->print();
-// }
+	base->print();
+}
 
 // Called virtual Base Class function
 // Called GFG_Child Display Function
 // Called GFG_Base print function
+
+
+
+
+
 
 // Advantages :
 

@@ -1,6 +1,5 @@
 // Copy constructor and copy assignment operator.
 
-
 //Copy constructor is used to initialize the members of a newly created object by copying the members of an already existing object.
 //Copy assignment operator is used when both objects are already present in memory.
 
@@ -59,6 +58,3 @@
 // S1:Age is : 10 RollNo is : 101S1:Age is : 10 RollNo is : 101this:0x1006e78
 // Constructor 3 called
 // S3:Age is : 20 RollNo is : 2001
-
-
-

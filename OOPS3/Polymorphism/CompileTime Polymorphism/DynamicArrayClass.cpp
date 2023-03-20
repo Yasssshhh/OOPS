@@ -3,19 +3,33 @@ using namespace std;
 
 class DynamicArray{
 
-int*data;
-int nextindex;
-int capacity;
+int*data; //pointer 
+int nextindex; //to store elements to a corresponding index
+int capacity; // to store capacity of array
 
 public:
 DynamicArray(){
     data=new int[5];
     nextindex=0;
-    capacity=5;
+    capacity=5; //initally we are taking 5 size array
 }
 
+//Copy constructor.
 DynamicArray(DynamicArray const &d){
-    //this->data=data //shallow copy
+    //this->data=data //shallow copy (always avoid shallow copy)
+    //Deep copy
+    this->data=new int[d.capacity];
+
+    for(int i=0;i<d.nextindex;i++){
+        this->data[i]=d.data[i];
+    }
+    this->nextindex=d.nextindex;
+    this->capacity=d.capacity;
+}
+
+//Copy Assignment Operator.
+void operator=(DynamicArray const &d){
+    //this->data=data //shallow copy (always avoid shallow copy)
     //Deep copy
     this->data=new int[d.capacity];
     for(int i=0;i<d.nextindex;i++){
@@ -25,16 +39,9 @@ DynamicArray(DynamicArray const &d){
     this->capacity=d.capacity;
 }
 
-void operator=(DynamicArray const &d){
-    this->data=new int[d.capacity];
-    for(int i=0;i<d.nextindex;i++){
-        this->data[i]=d.data[i];
-    }
-    this->nextindex=d.nextindex;
-    this->capacity=d.capacity;
-}
-
 void add(int element){
+
+    //if size of array is full, we will double it's capacity.
     if(nextindex==capacity){
         int*newdata=new int[2*capacity];
         for(int i=0;i<nextindex;i++){
@@ -48,12 +55,13 @@ void add(int element){
         nextindex++;
 }
 
+//To get value.
 int get(int i) const{
     if(i>=0 && i<nextindex)return data[i];
     else return -1;
 }
 
-//Add in a specific position
+//Add in a specific position.
 void add(int element,int i){
 
     if(i>nextindex)return;
@@ -62,7 +70,7 @@ void add(int element,int i){
         data[i]=element;
     }
 }
-
+// To print elements in range.
 void print() const{
     for(int i=0;i<nextindex;i++){
         cout<<data[i]<<" ";
