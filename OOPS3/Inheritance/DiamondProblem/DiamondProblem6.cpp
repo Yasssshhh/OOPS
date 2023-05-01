@@ -1,5 +1,4 @@
 #include<iostream>
-#include<bits/stdc++.h>
 using namespace std;
 
 class Vehicle{
@@ -15,7 +14,7 @@ class Vehicle{
     Vehicle(int z){
         maxSpeed=z;
         cout<<"Vehicle's paramaterized constructor"<<" "<<z<<endl; 
-         cout<<"Color"<<color<<endl;
+        cout<<"Color"<<color<<endl;
     }
 
     void print(){
@@ -45,12 +44,6 @@ class Car:virtual public Vehicle{
         cout<<"Cars Destructor"<<endl;
     }
 
-    // void print(){
-    //     cout<<"NumTyres"<<numTyres<<endl;
-    //     cout<<"Color"<<color<<endl;
-    //     cout<<"NumGears"<<numGears<<endl;
-
-    // }
 };
 
 
@@ -89,16 +82,15 @@ Bus b;
 b.color="red";
 }
 
-// Vehicle default constructor 5
+// Vehicle's paramaterized constructor 5
+// Color
 // Car default Constructor
 // Trucks default Constructor
 // Bus default Constructor
-// Vehicle
 // Bus Destructor
 // Trucks Destructor
 // Cars Destructor
 // Vehicle Destructor
-
 
 // int main(){
 // Car c;
@@ -106,6 +98,7 @@ b.color="red";
 // }
 
 // Vehicle's paramaterized constructor 3
+// Color
 // Car default Constructor
 // Vehicle
 // Cars Destructor
